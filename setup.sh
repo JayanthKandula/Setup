@@ -23,5 +23,6 @@ cd ~/los/frameworks/base
 git fetch  https://github.com/JayanthKandula/android_frameworks_base lineage-21.0
 git cherry-pick b0d10d8efe94d8a61e99a58c7b4c418e4d37f691
 git cherry-pick b0d10d8efe94d8a61e99a58c7b4c418e4d37f691..44a263003246c4eb20744e1d8c19bd990e1cc5f8
-git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi los/hardware/xiaomi
+cd ~/los
+git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
 
