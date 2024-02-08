@@ -15,15 +15,14 @@ git cherry-pick d988ab03352fcd72e97b3f85d42425ef6bfd1e82..d890a2fe0ab0e8c92ec86f
 cd ~/los/frameworks/base
 git fetch  https://github.com/JayanthKandula/android_frameworks_base lineage-21.0
 git cherry-pick 1e50adf4bb3ba09f9ca89fb6d512858a66759e90
-git cherry-pick 1e50adf4bb3ba09f9ca89fb6d512858a66759e90..e66944d9ee65b8fe89aa8e2f2af9e4044b29880a
+git cherry-pick 1e50adf4bb3ba09f9ca89fb6d512858a66759e90..62631e2dae15164965ff21d5e6fa82b630a07eaf
 cd ~/los/vendor/lineage
 git fetch https://github.com/JayanthKandula/android_vendor_lineage lineage-21.0
 git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6
-git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6..edb5126e70be9ba149f5d8fadb1d5cb5351f641a
+git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6..99399ab8f8f73d1b53ae5c3b2afe597281e4fc13
 cd ~/los/packages/overlays/Lineage
 git fetch https://github.com/JayanthKandula/android_packages_overlays_Lineage.git lineage-21.0
 git cherry-pick b96670d4c93059c2e75796d91f3274536c021b98
+git cherry-pick b96670d4c93059c2e75796d91f3274536c021b98..6cfb2bf3b2d44f09cce378c65517bbf690bb4716
 cd ~/los
 git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
-cd ~/los
-git clone -b upsilon https://gitlab.com/MindTheGapps/vendor_gapps.git vendor/gapps
