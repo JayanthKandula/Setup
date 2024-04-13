@@ -16,15 +16,17 @@ git cherry-pick 359f8301e17aa16992d0d2c495b9fd7bf595fa57..e018d4ce2ddfd65652ce95
 cd ~/los/vendor/lineage
 git fetch git@github.com:JayanthKandula/android_vendor_lineage.git lineage-21.0
 git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6
+git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6..99399ab8f8f73d1b53ae5c3b2afe597281e4fc13
 
 cd ~/los/packages/overlays/Lineage
 git fetch git@github.com:JayanthKandula/android_packages_overlays_Lineage.git lineage-21.0
 git cherry-pick b96670d4c93059c2e75796d91f3274536c021b98
+git cherry-pick b96670d4c93059c2e75796d91f3274536c021b98..504de405fcef045e5d07976cfd223f3070a1caf1
 
 cd ~/los/packages/apps/Trebuchet
 git fetch git@github.com:JayanthKandula/android_packages_apps_Trebuchet.git lineage-21.0
-git cherry-pick 2d8a6a2afa50c0dbfa42c960324511e4c4ff1269
-git cherry-pick 2d8a6a2afa50c0dbfa42c960324511e4c4ff1269..7b4fa8d66eaba1c6c2df1ae50dc294651e6a2e2d
+git cherry-pick deb83555c5ee7db3b8dad75b8a57c2f0b2fa4e87
+git cherry-pick deb83555c5ee7db3b8dad75b8a57c2f0b2fa4e87..5fc9b821012cae9a99c68e72664cf0dda3638ad7
 
 cd ~/los/packages/apps/Updater
 git fetch https://github.com/JayanthKandula/android_packages_apps_Updater lineage-21.0
