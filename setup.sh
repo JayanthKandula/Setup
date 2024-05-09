@@ -25,10 +25,17 @@ git cherry-pick b96670d4c93059c2e75796d91f3274536c021b98..504de405fcef045e5d0797
 
 cd ~/los/packages/apps/Trebuchet
 git fetch git@github.com:JayanthKandula/android_packages_apps_Trebuchet.git lineage-21.0
-git cherry-pick deb83555c5ee7db3b8dad75b8a57c2f0b2fa4e87
-git cherry-pick deb83555c5ee7db3b8dad75b8a57c2f0b2fa4e87..5fc9b821012cae9a99c68e72664cf0dda3638ad7
+git cherry-pick e26cb9616fdd19c0e8eb90f5df7d1a957815ba8b
+git cherry-pick 2b8a47c16492d704632ce0568e7319cab974323d
 
 cd ~/los/packages/apps/Updater
 git fetch https://github.com/JayanthKandula/android_packages_apps_Updater lineage-21.0
 git cherry-pick 86cc1276049e1ea92f3592a1f84d5d83238ff94f
 
+cd ~/los/frameworks/native
+git fetch git@github.com:JayanthKandula/android_frameworks_native.git lineage-21.0
+git cherry-pick e1aa0692c50489f3781ac2949b5cc9c578521b2f
+
+cd ../..
+git clone -b main git@github.com:JayanthKandula/android_packages_apps_F-DroidPrivilegedExtension.git packages/apps/F-DroidPrivilegedExtension
+git clone -b main git@github.com:JayanthKandula/vendor_F-Droid.git vendor/F-Droid
