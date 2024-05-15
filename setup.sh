@@ -1,7 +1,7 @@
 cd ~/los/frameworks/base
 git fetch git@github.com:JayanthKandula/android_frameworks_base.git lineage-21.0
 git cherry-pick 8d7b25a258ba79ee9b31bbd6c83204ed8ebc0660
-git cherry-pick 8d7b25a258ba79ee9b31bbd6c83204ed8ebc0660..876ba960270f44a36d0cc69b888cf326f02b12b3
+git cherry-pick 8d7b25a258ba79ee9b31bbd6c83204ed8ebc0660..84e80caa33b5b992cc300fdfe1f74a6ba588ae91
 
 cd ~/los/packages/apps/Settings
 git fetch git@github.com:JayanthKandula/android_packages_apps_Settings.git lineage-21.0
