@@ -1,7 +1,7 @@
 cd ~/los/frameworks/base
 git fetch git@github.com:JayanthKandula/android_frameworks_base.git lineage-21.0
-git cherry-pick 8d7b25a258ba79ee9b31bbd6c83204ed8ebc0660
-git cherry-pick 8d7b25a258ba79ee9b31bbd6c83204ed8ebc0660..84e80caa33b5b992cc300fdfe1f74a6ba588ae91
+git cherry-pick 0546a0e7b575e834d6ef05e1b950cbb8310750a9
+git cherry-pick 0546a0e7b575e834d6ef05e1b950cbb8310750a9..f7477144507d7b000e9291b895578204a0f8141b
 
 cd ~/los/packages/apps/Settings
 git fetch git@github.com:JayanthKandula/android_packages_apps_Settings.git lineage-21.0
@@ -16,7 +16,7 @@ git cherry-pick 359f8301e17aa16992d0d2c495b9fd7bf595fa57..e018d4ce2ddfd65652ce95
 cd ~/los/vendor/lineage
 git fetch git@github.com:JayanthKandula/android_vendor_lineage.git lineage-21.0
 git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6
-git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6..99399ab8f8f73d1b53ae5c3b2afe597281e4fc13
+git cherry-pick ac92c0ad448bab63ede53316a88e0c78f47d4aa6..2f22d6ea729e36ccc8b211de5f592648b3e0f14f
 
 cd ~/los/packages/overlays/Lineage
 git fetch git@github.com:JayanthKandula/android_packages_overlays_Lineage.git lineage-21.0
@@ -39,3 +39,6 @@ git cherry-pick e1aa0692c50489f3781ac2949b5cc9c578521b2f
 cd ../..
 git clone -b main git@github.com:JayanthKandula/android_packages_apps_F-DroidPrivilegedExtension.git packages/apps/F-DroidPrivilegedExtension
 git clone -b main git@github.com:JayanthKandula/vendor_F-Droid.git vendor/F-Droid
+
+rm -rf packages/apps/Backgrounds
+git clone -b lineage-21.0 git@github.com:JayanthKandula/packages_apps_Backgrounds.git packages/apps/Backgrounds
