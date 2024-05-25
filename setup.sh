@@ -16,7 +16,7 @@ git cherry-pick 359f8301e17aa16992d0d2c495b9fd7bf595fa57..e018d4ce2ddfd65652ce95
 cd ~/los/vendor/lineage
 git fetch git@github.com:JayanthKandula/android_vendor_lineage.git lineage-21.0
 git cherry-pick aa167cfb991bbe9db931ecbf4bdd8bf1b9645ca2
-git cherry-pick aa167cfb991bbe9db931ecbf4bdd8bf1b9645ca2..d33b3af634cdf23cd347c8a06d7e1f9360fce476
+git cherry-pick aa167cfb991bbe9db931ecbf4bdd8bf1b9645ca2..ff228db93da2f6d96517e0436c499bc999d98839
 
 cd ~/los/packages/overlays/Lineage
 git fetch git@github.com:JayanthKandula/android_packages_overlays_Lineage.git lineage-21.0
@@ -36,15 +36,20 @@ cd ~/los/frameworks/native
 git fetch git@github.com:JayanthKandula/android_frameworks_native.git lineage-21.0
 git cherry-pick e1aa0692c50489f3781ac2949b5cc9c578521b2f
 
+cd ~/los/bootable/recovery
+git fetch git@github.com:JayanthKandula/android_bootable_recovery.git lineage-21.0
+git cherry-pick c106442fcc3acc898348bb3285e94d441311ea94
+git cherry-pick c106442fcc3acc898348bb3285e94d441311ea94..e92505a9622545ea1e611b3eb9f578d9be61d5e9
+
 cd ../..
 rm -rf packages/apps/F-DroidPrivilegedExtension
 rm -rf vendor/F-Droid
+rm -rf packages/apps/Backgrounds
+rm -rf packages/apps/ParanoidSense
+rm -rf hardware/xiaomi
+
 git clone -b main git@github.com:JayanthKandula/android_packages_apps_F-DroidPrivilegedExtension.git packages/apps/F-DroidPrivilegedExtension
 git clone -b main git@github.com:JayanthKandula/vendor_F-Droid.git vendor/F-Droid
-
-rm -rf packages/apps/Backgrounds
 git clone -b lineage-21.0 git@github.com:JayanthKandula/packages_apps_Backgrounds.git packages/apps/Backgrounds
-
 git clone -b lineage-21.0 git@github.com:JayanthKandula/packages_apps_ParanoidSense.git packages/apps/ParanoidSense
-
 git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
