@@ -53,3 +53,4 @@ git clone -b main git@github.com:JayanthKandula/vendor_F-Droid.git vendor/F-Droi
 git clone -b lineage-21.0 git@github.com:JayanthKandula/packages_apps_Backgrounds.git packages/apps/Backgrounds
 git clone -b lineage-21.0 git@github.com:JayanthKandula/packages_apps_ParanoidSense.git packages/apps/ParanoidSense
 git clone -b lineage-21 https://github.com/LineageOS/android_hardware_xiaomi hardware/xiaomi
+git clone -b main git@github.com:JayanthKandula/vendor_lineage-priv.git vendor/lineage-priv
